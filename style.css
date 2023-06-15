@@ -12,7 +12,7 @@
   --color-base-gray-200: #8c8c99;
   --color-base-gray-300: #7c7c8a;
   --color-base-gray-400: #323238;
-  --color-feedback-sucess-color: #1d8841;
+  --color-feedback-success-color: #1d8841;
   --color-produto-purple-light: #8257e5;
   --color-produto-purple-mid: #633bbc;
 
@@ -78,4 +78,10 @@ form {
 .step-progress .active::before {
   background-color: var(--color-produto-purple-mid);
   color: var(--color-base-white);
+}
+
+.step-progress .done::before {
+  content: "✓";
+  font-size: 1.8rem;
+  background-color: var(--color-feedback-success-color);
 }
