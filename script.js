@@ -64,3 +64,14 @@ function isValidInputs() {
 
   return formFields.every((input) => input.reportValidity());
 }
+
+formSteps.forEach((formStep) => {
+  function addHide() {
+    formStep.classList.add("hide");
+  }
+
+  formStep.addEventListener("animationend", () => {
+    addHide();
+    formSteps[currentStep].classList.remove("hide");
+  });
+});
