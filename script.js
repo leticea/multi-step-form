@@ -9,6 +9,9 @@ form.addEventListener("click", (e) => {
 
   const actions = {
     next() {
+      if (!isValidInputs()) {
+        return;
+      }
       currentStep++;
     },
     prev() {
@@ -46,4 +49,14 @@ function updateProgressStep() {
       step.classList.add("done");
     }
   });
+}
+
+function isValidInputs() {
+  const currentFormStep = formSteps[currentStep];
+  const formFields = [
+    ...currentFormStep.querySelectorAll("input"),
+    ...currentFormStep.querySelectorAll("textarea"),
+  ];
+
+  return formFields.every((input) => input.reportValidity());
 }
