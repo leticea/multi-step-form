@@ -52,7 +52,46 @@
           <strong>Projeto</strong>
         </div>
 
-        <div class="form-step active"></div>
+        <div class="form-step active">
+          <div class="content">
+            <div class="input-wrapper">
+              <label for="name">Nome</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Como prefere ser chamado"
+                required
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="phone">Telefone</label>
+              <input
+                id="phone"
+                name="phone"
+                type="text"
+                placeholder="Digite seu número de WhatsApp"
+                onkeypress="return /\d/.test(event.key)"
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="email">E-mail</label>
+              <input
+                id="email"
+                name="email"
+                type="text"
+                placeholder="Digite seu e-mail"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="button-wrapper">
+            <button class="btn primary">CONTINUAR</button>
+          </div>
+        </div>
       </form>
     </main>
 
