@@ -85,3 +85,48 @@ form {
   font-size: 1.8rem;
   background-color: var(--color-feedback-success-color);
 }
+
+.content {
+  margin-top: 3.2rem;
+  display: grid;
+  gap: 1.6rem;
+}
+
+.button-wrapper {
+  margin-top: 3.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem 3.2rem;
+  border: 0;
+  border-radius: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  min-width: 15.8rem;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: var(--color-produto-purple-mid);
+  color: var(--color-base-white);
+}
+
+.primary:hover {
+  background-color: var(--color-produto-purple-light);
+  transition: all 0.2s;
+}
+
+.secondary {
+  background-color: var(--color-base-white);
+  color: var(--color-produto-purple-mid);
+  border: 1px solid var(--color-produto-purple-mid);
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
