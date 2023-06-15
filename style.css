@@ -26,7 +26,7 @@ textarea,
 button {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 1.6rem;
-  resize:none;
+  resize: none;
 }
 body {
   height: 100vh;
@@ -154,4 +154,12 @@ textarea::placeholder {
 
 input:focus {
   outline: 1px solid var(--color-base-gray-200);
+}
+
+.form-step {
+  display: none;
+}
+
+.form-step.active {
+  display: block;
 }
