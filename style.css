@@ -59,5 +59,17 @@ form {
 }
 
 .step-progress strong::before {
+  font-family: "Titillium Web";
+  font-size: 1.4rem;
   content: "1";
+  background-color: var(--color-base-gray-100);
+  color: var(--color-base-gray-200);
+  width: 2.8rem;
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
 }
+
+
