@@ -27,6 +27,10 @@ form.addEventListener("click", (e) => {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+
+  const data = new FormData(form);
+
+  alert(`Obrigado ${data.get("name")}!`);
 });
 
 function updateActiveStep() {
