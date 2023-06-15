@@ -72,4 +72,7 @@ form {
   border-radius: 999px;
 }
 
-
+.step-progress .active::before {
+  background-color: var(--color-produto-purple-mid);
+  color: var(--color-base-white);
+}
