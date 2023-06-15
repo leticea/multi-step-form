@@ -25,3 +25,10 @@ form.addEventListener("click", (e) => {
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 });
+
+function updateActiveStep() {
+  formSteps.forEach((step) => step.classList.remove("active"));
+  formSteps[currentStep].classList.add("active");
+}
+
+function updateProgressStep() {}
