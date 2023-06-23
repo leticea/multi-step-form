@@ -157,6 +157,12 @@ Projetos #boraCodar da [Rocketseat](https://boracodar.dev/).
       <td>07/06/23</td>
       <td><a href="https://github.com/leticea/profile-settings">🔗</a></td>
     </tr>
+    <tr>
+      <td>24</td>
+      <td>Lighting Adjustment</td>
+      <td>21/06/23</td>
+      <td><a href="https://github.com/leticea/lighting-adjustment">🔗</a></td>
+    </tr>
   </tbody>
 </table>
 
